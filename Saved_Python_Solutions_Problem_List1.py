@@ -55,8 +55,18 @@ print(power_finder_of_exclusive_numbers(number, knumber))"""#Answer to this litt
 Nnumber=int(input("Write down the your imagined number : "))
 print(f"N! of your daresayed(in another entailing) digit is equal to : {Factorial_Searching_Algorithm(Nnumber)}")"""#Portrayed answer to tough question is Magnificient
 
-"""While Problem 7 : """
-    
+"""While Problem 7 : Look for the overall sum of A(1)=1, A(2)=2, A(k)=(A(k-2)+2A(k-1))/3 numerical series"""
+A=[]
+A[1]=1
+A[2]=2
+sum=3
+k=3
+n=int(input("It's my delight to recall the strict rule that provide the number which you would like to seek the sum value of given sequence : "))
+while(k<=n):
+    A[k]=(A[k-2]+2A[k-1])/3
+    sum+=A[k]
+if(n==2):
+    print("The including-everything sum of digital sequence is")
 
 
 
